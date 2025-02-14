@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/distributed-saga-orchestrator",
+    "description": "Distributed transaction coordinator implementing Saga state machines, compensating transactions, and transactional outbox patterns.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\SagaForge\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\SagaForge\\PackageServiceProvider"
+            ]
+        }
+    }
+}
